@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Roboto+Mono&display=swap');
+
+:root {
+    --color-principal: #27374D;
+    --color-secundary: #DDE6ED;
+    --color-tertiary: #9DB2BF;
+    --hover-color: #526D82; 
+    --font-style-one: 'Courier Prime', monospace;
+    --font-style-two: 'roboto'
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-principal) ;
+    color: var(--color-secundary);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--font-style-one);
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-tertiary);
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-family: var(--font-style-one);;
+    font-size: 2.25rem;
+}
+
+.titulo-destaque {
+    color: var(--color-tertiary);
+}
+
+.apresentacao__conteudo__texto {
+    font-family: var(--font-style-two);
+    font-size: 1.5rem;;
+}
+
+.apresentacao__redes__sociais {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--color-tertiary);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 2rem;
+    padding: 10px 0;
+    color: var(--color-tertiary);
+    text-decoration: none;
+    font-family:  var(--font-style-one);
+}
+
+.apresentacao__redes__sociais:hover {
+    background-color: var(--hover-color);
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__minhas__redes {
+    font-family: var(--font-style-one);
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+.rodape {
+    text-align: center;
+    font-family: var(--font-style-one);
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 24px;
+    color: var(--color-tertiary);
+    background-color: var(--color-secundary);
+}
+
+    @media (max-width: 1200px) {
+        .cabecalho {
+            padding: 10%;
+        }
+
+        .cabecalho__menu {
+            justify-content: center;
+        }
+
+        .apresentacao {
+            flex-direction: column-reverse;
+            padding: 5%;
+        }
+
+        .apresentacao__conteudo {
+            width: auto;
+        }
+       
+    }
